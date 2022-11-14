@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="oyunc"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-14 08:08:54 &#214;S"/>
+        <attribute name="created" value="b3l1bmM7REVTS1RPUC1HMEVWUjJGOzIwMjItMTEtMTQ7MDc6NTg6MTIgw5ZTOzMwMzc="/>
+        <attribute name="edited" value="b3l1bmM7REVTS1RPUC1HMEVWUjJGOzIwMjItMTEtMTQ7MDg6MDg6NTQgw5ZTOzE7MzE0Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="years, year1" type="Integer" array="False" size=""/>
+            <output expression="&quot;give a year&quot;" newline="True"/>
+            <input variable="years"/>
+            <if expression="years&lt;1900">
+                <then>
+                    <output expression="&quot;you are ancient&quot;" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="year1" expression="years-1900"/>
+                    <output expression="&quot;&quot;&amp; year1 &amp; &quot; years passed from 1900&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
